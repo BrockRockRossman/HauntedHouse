@@ -29,6 +29,10 @@ public class HauntedHouse {
             candyCount = candyCount - people;
         }
 
+        if(candyCount == 0) {
+            candyCount = 10;
+        }
+
     }
 
     public int getCandyCount() {
@@ -41,11 +45,6 @@ public class HauntedHouse {
 
     public void haunting() { ghostPresent = true; }
 
-    public void runningLow() {
-        if(candyCount == 0) {
-            candyCount = 10;
-        }
-    }
 
     @Override
     public String toString() {
