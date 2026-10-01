@@ -106,6 +106,19 @@ class HauntedHouseTest {
     }
 
     @Test
+    void testHaunting() {
+
+        house.scareAwayGhost();
+        house.haunting();
+        assertTrue(house.isGhostPresent());
+    }
+
+    @Test
+    void testRunningLow() {
+
+    }
+
+    @Test
     void testToStringChangeCandy() {
 
         house.trickOrTreat(5);
